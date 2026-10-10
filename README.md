@@ -1,11 +1,11 @@
-# Título Proyecto
+# Sport Center
 
 ## Miembros del grupo LX-XXX-X (sustituir)
 
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
+1. Vega Ruiz, Pablo
+1. González Pérez, Pablo
+1. Diatta, Trevor Charles Ambroise
+1. Tena Bastias, Adrian
 
 ## 1. Introducción al problema
 
