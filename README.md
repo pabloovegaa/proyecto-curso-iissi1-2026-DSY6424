@@ -9,12 +9,26 @@
 
 ## 1. Introducción al problema
 
-- Descripción del problema para poner en contexto el proyecto, incluyendo información sobre los clientes y usuarios, la situación actual, problemas, expectativas, etc. Se valorará la presencia de información multimedia (fotos, gráficos, documentos escaneados, etc.).
+Los centros deportivos municipales o privados cuentan con una amplia variedad de instalaciones (pistas) que se destina para el uso y disfrute de los ciudadanos.
+A la hora de la gestión del acceso y asignación de pista muchas de ellas llegan a ser manuales o poco coordinadas. Dificultando la organizacion y el aprovechamiento optimo de las pistas.
+Entre los problemas encontrados podemos ver:
+- Una desorganización y conflictos de horario: Falta una centralización que evite la asignacion de una pista a dos clientes diferentes.
+- Falta de visibilidad: Imposibilidad de los clientes para ver cuales plazas están libres.
+- Carga administrativa: Dificultad del personal para actualizar precios, habilitar o deshabilitar pistas.
+Usuarios:
+-Cliente: Usuario que quiere ver las pistas disponibles y reservar la instalación en una franja horaria determinada.
+-Administrador: Personal responsable de la configuración de pistas, gestión de precios, dar alta/baja pistas y una supervisión del sistema.
+Solucion:
+Desarrollar una aplicación de gestión de reservas que permita a los clientes seleccionar y asegurar su pista en la fecha y franja horaria deseada de forma autónoma. Asimismo, la herramienta proporcionará al administrador un panel de control intuitivo para gestionar el catálogo de pistas, establecer sus precios y ajustar la disponibilidad según la operativa del centro deportivo.
+<img width="2313" height="1899" alt="Booking - ES" src="https://github.com/user-attachments/assets/1f03e35a-d1d1-484d-aada-167c4175bade" />
+
 
 ## 2. Glosario de términos
 
 Franja Horaria: Bloque de tiempo de duración determinada configurado por el centro deportivo para la asignación y disfrute de una pista.
+
 Pista: Recinto o instalación deportiva delimitada y caracterizada por el deporte al que se destina (fútbol, tenis, pádel).
+
 Reserva: Asignación exclusiva y anticipada de una pista a un socio para una fecha y franja horaria concretas.
 
 
