@@ -46,6 +46,7 @@ Pista: Recinto o instalación deportiva delimitada y caracterizada por el deport
 <img width="270" height="150" alt="image" src="https://github.com/user-attachments/assets/9383aad1-0ab8-4b20-9b2d-17dfe4aac764" />
 <img width="270" height="150" alt="image" src="https://github.com/user-attachments/assets/10e46605-aa1f-49ed-8b17-f5a38abd1305" />
 <img width="270" height="150" alt="image" src="https://github.com/user-attachments/assets/f3304817-f919-4bd2-9fe9-c651cbaf59ac" />
+
 Reserva: Asignación exclusiva y anticipada de una pista a un socio para una fecha y franja horaria concretas.
 
 
