@@ -1,6 +1,6 @@
-# Sport Center
+# Sistema de reserva de pistas
 
-## Miembros del grupo LX-XXX-X (sustituir)
+## Miembros del grupo L7-DF-6
 
 1. Vega Ruiz, Pablo
 1. González Pérez, Pablo
@@ -13,13 +13,19 @@
 
 ## 2. Glosario de términos
 
-- Términos específicos del dominio del problema, ordenados alfabéticamente. Se valorará la presencia de información multimedia.
+Franja Horaria: Bloque de tiempo de duración determinada configurado por el centro deportivo para la asignación y disfrute de una pista.
+Pista: Recinto o instalación deportiva delimitada y caracterizada por el deporte al que se destina (fútbol, tenis, pádel).
+Reserva: Asignación exclusiva y anticipada de una pista a un socio para una fecha y franja horaria concretas.
+
 
 ## 3. Visión general del sistema
 
 ### 3.1. Requisitos generales
 
 ### 3.2. Usuarios del sistema
+Administrador: Usuario con privilegios de la aplicación, al que se le permite habilitar y deshabilitar pistas. Además de asignar horarios, precios y duración de la pista. La supervisión de cancelar reservas de usuarios por incidencias del centro.
+
+Cliente: Usuario registrado en la aplicación que tiene disponibilidad de consultar pistas alquiladas, la posibilidad de reservar, gestionar o cancelar reserva de pista.
 
 ## 4. Catálogo de requisitos
 
