@@ -9,21 +9,36 @@
 
 ## 1. Introducción al problema
 
-Los centros deportivos municipales o privados cuentan con una amplia variedad de instalaciones (pistas) que se destina para el uso y disfrute de los ciudadanos.
-A la hora de la gestión del acceso y asignación de pista muchas de ellas llegan a ser manuales o poco coordinadas. Dificultando la organizacion y el aprovechamiento optimo de las pistas.
-Entre los problemas encontrados podemos ver:
-- Una desorganización y conflictos de horario: Falta una centralización que evite la asignacion de una pista a dos clientes diferentes.
-- Falta de visibilidad: Imposibilidad de los clientes para ver cuales plazas están libres.
-- Carga administrativa: Dificultad del personal para actualizar precios, habilitar o deshabilitar pistas.
-Usuarios:
--Cliente: Usuario que quiere ver las pistas disponibles y reservar la instalación en una franja horaria determinada.
--Administrador: Personal responsable de la configuración de pistas, gestión de precios, dar alta/baja pistas y una supervisión del sistema.
-Solucion:
-Desarrollar una aplicación de gestión de reservas que permita a los clientes seleccionar y asegurar su pista en la fecha y franja horaria deseada de forma autónoma. Asimismo, la herramienta proporcionará al administrador un panel de control intuitivo para gestionar el catálogo de pistas, establecer sus precios y ajustar la disponibilidad según la operativa del centro deportivo.
+Los centros deportivos municipales y privados cuentan con una amplia variedad de instalaciones deportivas (principalmente pistas de pádel y tenis) destinadas al uso y disfrute de sus socios y clientes. En la actualidad, la gestión del acceso, el control de mantenimiento y la asignación de estas pistas se realizan de forma manual o mediante sistemas poco coordinados (llamadas telefónicas y anotaciones en papel), lo que dificulta la organización y el aprovechamiento óptimo de las instalaciones.
+
+Entre los principales problemas detectados en la situación actual destacan:
+
+Desorganización y conflictos de horario:Ausencia de un sistema centralizado que evite la asignación doble de una misma pista a dos clientes en la misma franja horaria.
+
+Falta de visibilidad e ineficiencia: Imposibilidad de los usuarios para consultar en tiempo real qué pistas y franjas horarias se encuentran libres u ocupadas.
+
+Carga administrativa y falta de control de instalaciones: Dificultad del personal del club para gestionar tarifas, registrar bloqueos de pistas por mantenimiento o controlar la asignación de servicios adicionales como las taquillas.
+
+ Clientes y Usuarios del Sistema
+Socio / Cliente: Usuario que desea consultar la disponibilidad de pistas en tiempo real, visualizar sus reservas y comprobar el estado de su taquilla asignada.
+
+Administrador: Personal responsable de la configuración del catálogo de pistas, gestión de tarifas por horario, registro de partes de mantenimiento y supervisión de la ocupación del centro.
+
+ Solución Propuesta:
+Desarrollar una aplicación web de gestión de reservas que permita a los clientes consultar y asegurar sus pistas en la fecha y franja horaria deseada de forma autónoma. Asimismo, el sistema proporcionará al administrador un panel de control intuitivo con una parrilla diaria de ocupación (Foto) para supervisar la disponibilidad, gestionar estados de mantenimiento y ajustar las tarifas del club.
+
 <img width="2313" height="1899" alt="Booking - ES" src="https://github.com/user-attachments/assets/1f03e35a-d1d1-484d-aada-167c4175bade" />
 
 
 ## 2. Glosario de términos
+
+Administrador: Usuario autenticado con permisos avanzados para gestionar las instalaciones, tarifas y bloqueos de mantenimiento del club. 
+
+Mantenimiento: Estado o registro temporal asociado a una pista durante el cual queda inhabilitada para la reserva por motivos de conservación. 
+
+ Socio: Usuario registrado en la plataforma habilitado para realizar consultas de disponibilidad y solicitar alquileres de pistas o taquillas. 
+
+Taquilla: Espacio físico de almacenamiento individual alquilado por los socios del club. 
 
 Franja Horaria: Bloque de tiempo de duración determinada configurado por el centro deportivo para la asignación y disfrute de una pista.
 
@@ -33,13 +48,20 @@ Reserva: Asignación exclusiva y anticipada de una pista a un socio para una fec
 
 
 ## 3. Visión general del sistema
-
 ### 3.1. Requisitos generales
 
+1. El sistema debe ser accesible vía web para socios y administradores. 
+
+2. Se debe garantizar la integridad de las reservas impidiendo solapamientos de fechas y horas en la misma pista. 
+
+3. El sistema mantendrá un registro histórico de las reservas e incidencias de mantenimiento finalizadas.
+
 ### 3.2. Usuarios del sistema
+
 Administrador: Usuario con privilegios de la aplicación, al que se le permite habilitar y deshabilitar pistas. Además de asignar horarios, precios y duración de la pista. La supervisión de cancelar reservas de usuarios por incidencias del centro.
 
-Cliente: Usuario registrado en la aplicación que tiene disponibilidad de consultar pistas alquiladas, la posibilidad de reservar, gestionar o cancelar reserva de pista.
+Socio: Usuario registrado que consulta pistas disponibles, revisa sus reservas y comprueba el estado de su taquilla.
+
 
 ## 4. Catálogo de requisitos
 
