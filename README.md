@@ -5,7 +5,7 @@
 1. Vega Ruiz, Pablo
 1. González Pérez, Pablo
 1. Diatta, Trevor Charles Ambroise
-1. Tena Bastias, Adrian
+1. Tena Bastías, Adrián
 
 ## 1. Introducción al problema
 
@@ -36,14 +36,16 @@ Administrador: Usuario autenticado con permisos avanzados para gestionar las ins
 
 Mantenimiento: Estado o registro temporal asociado a una pista durante el cual queda inhabilitada para la reserva por motivos de conservación. 
 
- Socio: Usuario registrado en la plataforma habilitado para realizar consultas de disponibilidad y solicitar alquileres de pistas o taquillas. 
+Socio: Usuario registrado en la plataforma habilitado para realizar consultas de disponibilidad y solicitar alquileres de pistas o taquillas. 
 
 Taquilla: Espacio físico de almacenamiento individual alquilado por los socios del club. 
 
 Franja Horaria: Bloque de tiempo de duración determinada configurado por el centro deportivo para la asignación y disfrute de una pista.
 
 Pista: Recinto o instalación deportiva delimitada y caracterizada por el deporte al que se destina (fútbol, tenis, pádel).
-
+<img width="270" height="150" alt="image" src="https://github.com/user-attachments/assets/9383aad1-0ab8-4b20-9b2d-17dfe4aac764" />
+<img width="270" height="150" alt="image" src="https://github.com/user-attachments/assets/10e46605-aa1f-49ed-8b17-f5a38abd1305" />
+<img width="270" height="150" alt="image" src="https://github.com/user-attachments/assets/f3304817-f919-4bd2-9fe9-c651cbaf59ac" />
 Reserva: Asignación exclusiva y anticipada de una pista a un socio para una fecha y franja horaria concretas.
 
 
