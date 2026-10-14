@@ -125,6 +125,10 @@ R.N.05. Exclusividad de Asignación de Taquilla
 Una taquilla solo puede estar alquilada por un único socio de forma activa a la vez.
 Prueba 1:Asignar la Taquilla T-12 al Socio A. Intentar asignar la misma Taquilla T-12 al Socio B de forma simultánea. El sistema debe denegar la segunda asignación. 
 
+R.N.06. Edad mínima para Reserva
+Un socio debe tener al menos 16 años para efectuar una reserva de pista.
+Prueba 1: Intentar registrar una reserva con la cuenta de un socio cuya fecha de nacimiento indique que tiene 15 años. El sistema debe denegar la operación e informar que no cumple el requisito de edad mínima.
+Prueba 2:Intentar registrar una reserva con la cuenta de un socio que tenga 16 años o más. El sistema debe permitir la reserva con normalidad.
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
