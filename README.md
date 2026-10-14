@@ -70,36 +70,61 @@ Socio: Usuario registrado que consulta pistas disponibles, revisa sus reservas y
 
 ### 4.1. Requisitos funcionales
 
-#### R.F.01. Título requisito funcional
+R.F.01. Listar Pistas Disponibles 
+Como Socio( quiero )obtener un listado de pistas disponibles filtrado por fecha, hora y tipo de superficie( para )encontrar una pista libre según mis preferencias.
 
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
 
-**Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- Se debe aplicar la regla de negocio R.N.XX.
-- ...
+R.F.02. Consultar Reservas de un Socio 
+Como Socio( quiero)  visualizar mis reservas filtradas por estado (próximas, completadas o canceladas)  (para )revisar mis horarios confirmados. 
+
+
+
+R.F.03. Consultar Parrilla Diaria de Ocupación 
+Como Administrador( quiero )visualizar la parrilla completa de ocupación del club para una fecha determinada( para) supervisar el uso general del centro.
+
+
+
+R.F.04. Listar Partes de Mantenimiento Activos 
+Como Administrador ( quiero )consultar un listado de las pistas en mantenimiento con su descripción y fecha prevista de finalización( para )planificar las reparaciones del centro.
+
 
 #### 4.1.1. Requisitos de información
+R.I.01. Información de Usuarios 
+Como Socio / Administrador( quiero )consultar los datos personales del usuario (DNI, nombre, email, teléfono y fecha de alta)( para) gestionar la identificación dentro del club.
 
-##### R.I.01. Título requisito de información
+R.I.02. Información de Pistas 
+Como Socio / Administrador( quiero) consultar las características de cada pista (número, superficie, si es cubierta, con luz y precio por hora) (para) elegir la instalación adecuada. 
 
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+R.I.03. Historial de Reservas del Socio 
+Como Socio quiero consultar el listado de mis reservas activas y pasadas( para )llevar un control de mis partidas e importes pagados.  
 
-**Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- ...
+R.I.04. Ocupación Diaria de Pistas 
+Como Administrador(quiero) consultar la parrilla diaria de ocupación de todas las pistas(para) conocer qué pistas están libres, reservadas o bloqueadas.
 
 #### 4.1.2. Reglas de negocio
+R.N.01. Exclusividad de Reserva por Pista 
+Una pista sólo puede tener una única reserva activa en la misma fecha y franja horaria. 
+Prueba 1: Intentar registrar una reserva para la Pista 1 el 20/10/2026 a las 10:00 h habiendo ya una reserva confirmada en ese tramo. El sistema debe bloquear la operación e informar de un conflicto de ocupación. 
+Prueba 2: Solicitar reserva para la Pista 1 en un tramo posterior (11:30 h) del mismo día. Comprobar que el sistema confirma la reserva correctamente.
 
-##### R.N.01. Título regla negocio
+R.N.02. Límite de Reservas Activas por Socio 
+Un socio no puede tener más de 2 reservas activas simultáneas en el sistema para evitar el acaparamiento de pistas. 
+Prueba 1:Seleccionar un socio que posea 2 reservas activas para días futuros e intentar asignarle una 3ª reserva. El sistema debe denegar la acción indicando que ha alcanzado el límite máximo. 
+Prueba 2: Proceder a cancelar una de las dos reservas del socio e intentar de nuevo registrar la reserva. Comprobar que la operación resulta exitosa.
 
-Descripción de la regla de negocio.
+R.N.03. Antelación Mínima para Cancelación
+Una reserva solo puede ser cancelada sin coste económico si se solicita con un mínimo de 12 horas de antelación respecto al inicio del horario reservado.
+Prueba 1:Cancelar una reserva programada para las 20:00 h solicitándolo a las 07:00 h del mismo día (13 h de antelación). Comprobar que se procesa sin penalización. 
+Prueba 2:Intentar cancelar la misma reserva a las 12:00 h (8 h de antelación). Comprobar que el sistema deniega la devolución por incumplimiento de antelación.
+
+R.N.04. Incompatibilidad por Mantenimiento 
+Una pista marcada con un registro de mantenimiento activo en un horario determinado no puede ser reservada por ningún socio.  
+Prueba 1:Solicitar disponibilidad de la Pista 3 durante una fecha y hora en la que tiene registrado un parte de mantenimiento. La Pista 3 no debe aparecer en el listado de pistas disponibles. 
+
+R.N.05. Exclusividad de Asignación de Taquilla 
+Una taquilla solo puede estar alquilada por un único socio de forma activa a la vez.
+Prueba 1:Asignar la Taquilla T-12 al Socio A. Intentar asignar la misma Taquilla T-12 al Socio B de forma simultánea. El sistema debe denegar la segunda asignación. 
+
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
