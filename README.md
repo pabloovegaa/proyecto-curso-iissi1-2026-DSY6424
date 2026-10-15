@@ -36,8 +36,6 @@ Administrador: Usuario autenticado con permisos avanzados para gestionar las ins
 
 Mantenimiento: Estado o registro temporal asociado a una pista durante el cual queda inhabilitada para la reserva por motivos de conservación. 
 
-Socio: Usuario registrado en la plataforma habilitado para realizar consultas de disponibilidad y solicitar alquileres de pistas o taquillas. 
-
 Taquilla: Espacio físico de almacenamiento individual alquilado por los socios del club. 
 
 Franja Horaria: Bloque de tiempo de duración determinada configurado por el centro deportivo para la asignación y disfrute de una pista.
