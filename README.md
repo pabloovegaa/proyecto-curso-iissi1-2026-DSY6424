@@ -39,10 +39,10 @@ Desarrollar una aplicación web de gestión de reservas que permita a los client
 
 ### 3.2. Usuarios del sistema
 
-Administrador: Usuario con privilegios de la aplicación, al que se le permite habilitar y deshabilitar pistas. Además de asignar horarios, precios y duración de la pista. La supervisión de cancelar reservas de usuarios por incidencias del centro.
+Administrador: Usuario que gestiona las instalaciones y supervisa las reservas del club.
 
-Socio: Usuario registrado que consulta pistas disponibles, revisa sus reservas y comprueba el estado de su taquilla.
 
+Socio: Usuario que reserva pistas y consulta sus reservas y su taquilla.
 
 ## 4. Catálogo de requisitos
 
