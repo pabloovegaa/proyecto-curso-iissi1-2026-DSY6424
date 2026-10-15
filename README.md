@@ -62,7 +62,45 @@ Socio: Usuario que reserva pistas y consulta sus reservas y su taquilla.
 ## 4. Catálogo de requisitos
 
 ### 4.1. Requisitos funcionales
+RF5.1 Listado de taquillas 
 
+Como administrador, quiero ver un listado de las taquillas con su código, ubicación, estado y socio asignado, para saber cuáles están libres.
+
+Prueba de aceptación
+
+Acceder a la pantalla Taquillas. Se muestra una tabla con todas las taquillas y los botones Nueva taquilla, Editar, Eliminar, Asignar y Liberar.
+
+Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
+
+RF5.2 Creación de taquillas 
+
+Como administrador, quiero dar de alta una taquilla indicando su código y ubicación, para ampliar las taquillas disponibles del club. 
+
+Prueba de aceptación 
+
+Pulsar Nueva taquilla, rellenar código y ubicación y pulsar Guardar. La taquilla aparece en el listado con estado libre. 
+
+Introducir un código ya existente y pulsar Guardar. El sistema rechaza el alta e informa de que el código existe. 
+
+Pulsar Cancelar. Se vuelve al listado sin crear la taquilla.
+
+RF5.3 Edición de taquillas Como administrador, quiero modificar el código o la ubicación de una taquilla, para corregir sus datos. 
+
+Prueba de aceptación 
+
+Pulsar Editar, cambiar la ubicación y pulsar Guardar cambios. El listado muestra la nueva ubicación. 
+
+Vaciar el código y pulsar Guardar cambios. El sistema muestra un error de validación y no guarda.
+
+RF5.4 Eliminación de taquillas Como administrador, quiero eliminar una taquilla, para retirar del sistema las que ya no existen. 
+
+Prueba de aceptación 
+
+Pulsar Eliminar sobre una taquilla libre y pulsar Confirmar. La taquilla desaparece del listado. 
+
+Pulsar Eliminar y después Cancelar. La taquilla permanece en el listado. 
+
+Pulsar Eliminar sobre una taquilla con alquiler activo. El sistema impide la eliminación e informa del motivo.
 
 #### 4.1.1. Requisitos de información
 R.I.01. Información de Usuarios 
