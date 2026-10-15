@@ -91,6 +91,11 @@ Una pista marcada con un registro de mantenimiento activo en un horario determin
 
 Prueba 1:Solicitar disponibilidad de la Pista 3 durante una fecha y hora en la que tiene registrado un parte de mantenimiento. La Pista 3 no debe aparecer en el listado de pistas disponibles. 
 
+
+Prueba 2: Registrar un mantenimiento para la Pista 3 el 20/10/2026 de 10:00 h a 12:00 h. Consultar la disponibilidad de esa pista a las 13:00 h del mismo día. La Pista 3 debe aparecer en el listado de pistas disponibles.
+
+
+
 R.N.05. Exclusividad de Asignación de Taquilla 
 Una taquilla solo puede estar alquilada por un único socio de forma activa a la vez.
 
