@@ -49,35 +49,35 @@ Socio: Usuario registrado que consulta pistas disponibles, revisa sus reservas y
 ### 4.1. Requisitos funcionales
 
 R.F.01. Listar Pistas Disponibles 
-Como Socio( quiero )obtener un listado de pistas disponibles filtrado por fecha, hora y tipo de superficie( para )encontrar una pista libre según mis preferencias.
+Como Socio **quiero** obtener un listado de pistas disponibles filtrado por fecha, hora y tipo de superficie **para** encontrar una pista libre según mis preferencias.
 
 
 R.F.02. Consultar Reservas de un Socio 
-Como Socio( quiero)  visualizar mis reservas filtradas por estado (próximas, completadas o canceladas)  (para )revisar mis horarios confirmados. 
+Como Socio **quiero**  visualizar mis reservas filtradas por estado (próximas, completadas o canceladas)  **para** revisar mis horarios confirmados. 
 
 
 
 R.F.03. Consultar Parrilla Diaria de Ocupación 
-Como Administrador( quiero )visualizar la parrilla completa de ocupación del club para una fecha determinada( para) supervisar el uso general del centro.
+Como Administrador **quiero** visualizar la parrilla completa de ocupación del club para una fecha determinada **para** supervisar el uso general del centro.
 
 
 
 R.F.04. Listar Partes de Mantenimiento Activos 
-Como Administrador ( quiero )consultar un listado de las pistas en mantenimiento con su descripción y fecha prevista de finalización( para )planificar las reparaciones del centro.
+Como Administrador  **quiero** consultar un listado de las pistas en mantenimiento con su descripción y fecha prevista de finalización **para** planificar las reparaciones del centro.
 
 
 #### 4.1.1. Requisitos de información
 R.I.01. Información de Usuarios 
-Como Socio / Administrador( quiero )consultar los datos personales del usuario (DNI, nombre, email, teléfono y fecha de alta)( para) gestionar la identificación dentro del club.
+Como Socio / Administrador **quiero** consultar los datos personales del usuario (DNI, nombre, email, teléfono y fecha de alta) **para** gestionar la identificación dentro del club.
 
 R.I.02. Información de Pistas 
-Como Socio / Administrador( quiero) consultar las características de cada pista (número, superficie, si es cubierta, con luz y precio por hora) (para) elegir la instalación adecuada. 
+Como Socio / Administrador **quiero** consultar las características de cada pista (número, superficie, si es cubierta, con luz y precio por hora) **para** elegir la instalación adecuada. 
 
 R.I.03. Historial de Reservas del Socio 
-Como Socio quiero consultar el listado de mis reservas activas y pasadas( para )llevar un control de mis partidas e importes pagados.  
+Como Socio **quiero** consultar el listado de mis reservas activas y pasadas **para** llevar un control de mis partidas e importes pagados.  
 
 R.I.04. Ocupación Diaria de Pistas 
-Como Administrador(quiero) consultar la parrilla diaria de ocupación de todas las pistas(para) conocer qué pistas están libres, reservadas o bloqueadas.
+Como Administrador **quiero** consultar la parrilla diaria de ocupación de todas las pistas **para** conocer qué pistas están libres, reservadas o bloqueadas.
 
 #### 4.1.2. Reglas de negocio
 R.N.01. Exclusividad de Reserva por Pista 
