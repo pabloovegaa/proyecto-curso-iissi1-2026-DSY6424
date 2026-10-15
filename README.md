@@ -19,33 +19,13 @@ Falta de visibilidad e ineficiencia: Imposibilidad de los usuarios para consulta
 
 Carga administrativa y falta de control de instalaciones: Dificultad del personal del club para gestionar tarifas, registrar bloqueos de pistas por mantenimiento o controlar la asignación de servicios adicionales como las taquillas.
 
- Clientes y Usuarios del Sistema
-Socio / Cliente: Usuario que desea consultar la disponibilidad de pistas en tiempo real, visualizar sus reservas y comprobar el estado de su taquilla asignada.
-
-Administrador: Personal responsable de la configuración del catálogo de pistas, gestión de tarifas por horario, registro de partes de mantenimiento y supervisión de la ocupación del centro.
 
  Solución Propuesta:
 Desarrollar una aplicación web de gestión de reservas que permita a los clientes consultar y asegurar sus pistas en la fecha y franja horaria deseada de forma autónoma. Asimismo, el sistema proporcionará al administrador un panel de control intuitivo con una parrilla diaria de ocupación (Foto) para supervisar la disponibilidad, gestionar estados de mantenimiento y ajustar las tarifas del club.
 
-<img width="2313" height="1899" alt="Booking - ES" src="https://github.com/user-attachments/assets/1f03e35a-d1d1-484d-aada-167c4175bade" />
 
 
 ## 2. Glosario de términos
-
-Administrador: Usuario autenticado con permisos avanzados para gestionar las instalaciones, tarifas y bloqueos de mantenimiento del club. 
-
-Mantenimiento: Estado o registro temporal asociado a una pista durante el cual queda inhabilitada para la reserva por motivos de conservación. 
-
-Taquilla: Espacio físico de almacenamiento individual alquilado por los socios del club. 
-
-Franja Horaria: Bloque de tiempo de duración determinada configurado por el centro deportivo para la asignación y disfrute de una pista.
-
-Pista: Recinto o instalación deportiva delimitada y caracterizada por el deporte al que se destina (fútbol, tenis, pádel).
-<img width="270" height="150" alt="image" src="https://github.com/user-attachments/assets/9383aad1-0ab8-4b20-9b2d-17dfe4aac764" />
-<img width="270" height="150" alt="image" src="https://github.com/user-attachments/assets/10e46605-aa1f-49ed-8b17-f5a38abd1305" />
-<img width="270" height="150" alt="image" src="https://github.com/user-attachments/assets/f3304817-f919-4bd2-9fe9-c651cbaf59ac" />
-
-Reserva: Asignación exclusiva y anticipada de una pista a un socio para una fecha y franja horaria concretas.
 
 
 ## 3. Visión general del sistema
@@ -123,10 +103,6 @@ R.N.05. Exclusividad de Asignación de Taquilla
 Una taquilla solo puede estar alquilada por un único socio de forma activa a la vez.
 Prueba 1:Asignar la Taquilla T-12 al Socio A. Intentar asignar la misma Taquilla T-12 al Socio B de forma simultánea. El sistema debe denegar la segunda asignación. 
 
-R.N.06. Edad mínima para Reserva
-Un socio debe tener al menos 16 años para efectuar una reserva de pista.
-Prueba 1: Intentar registrar una reserva con la cuenta de un socio cuya fecha de nacimiento indique que tiene 15 años. El sistema debe denegar la operación e informar que no cumple el requisito de edad mínima.
-Prueba 2:Intentar registrar una reserva con la cuenta de un socio que tenga 16 años o más. El sistema debe permitir la reserva con normalidad.
 
 R.N.07. Antelación de máxima Reserva
 Un socio solo puede reservar con un máximo de 14 días de antelación. Así se evita bloquear el calendario con reservas muy lejanas.
