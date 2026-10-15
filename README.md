@@ -62,11 +62,61 @@ Socio: Usuario que reserva pistas y consulta sus reservas y su taquilla.
 ## 4. Catálogo de requisitos
 
 ### 4.1. Requisitos funcionales
+
+RF2.1 Listado de pistas 
+
+Como Administrador, quiero ver un listado de las pistas con su número, superficie, si es cubierta, si tiene luz, precio por hora y estado, para conocer las instalaciones del club.
+
+Prueba de aceptación:
+
+Acceder a la pantalla Pistas. Se muestra una tabla con todas las pistas y los botones Nueva pista, Editar, Eliminar y Habilitar/Deshabilitar.
+
+Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
+
+RF2.2 Creación de pistas
+
+Como Administrador, quiero dar de alta una pista indicando su número, superficie, si es cubierta, si tiene luz y su precio por hora, para ampliar las instalaciones disponibles.
+
+Prueba de aceptación:
+
+Pulsar Nueva pista, rellenar todos los datos y pulsar Guardar. La pista aparece en el listado con estado habilitada. 
+
+Introducir un número de pista ya existente y pulsar Guardar. El sistema rechaza el alta e informa de que el número existe.
+
+Introducir un precio negativo o vacío y pulsar Guardar. El sistema muestra un error de validación y no guarda.
+
+Pulsar Cancelar. Se vuelve al listado sin crear la pista.
+
+RF2.3 Edición de pistas 
+
+Como Administrador, quiero modificar las características de una pista (superficie, cubierta, luz, precio por hora), para mantener sus datos actualizados. 
+
+Prueba de aceptación
+
+Pulsar Editar, cambiar el precio por hora y pulsar Guardar cambios. El listado muestra el nuevo precio.
+
+Vaciar la superficie y pulsar Guardar cambios. El sistema muestra un error de validación y no guarda.
+
+Cambiar el precio de una pista con reservas ya confirmadas. Las reservas existentes conservan el precio con el que se hicieron.
+
+RF2.4 Eliminación de pistas 
+
+Como Administrador, quiero eliminar una pista, para retirar del sistema las que ya no existen.
+
+Prueba de aceptación
+
+Pulsar Eliminar sobre una pista sin reservas futuras ni mantenimiento activo y pulsar Confirmar. La pista desaparece del listado. 
+
+Pulsar Eliminar y después Cancelar. La pista permanece en el listado.
+
+Pulsar Eliminar sobre una pista con reservas futuras activas o un parte de mantenimiento activo. El sistema impide la eliminación e informa del motivo.
+
+
 RF5.1 Listado de taquillas 
 
 Como administrador, quiero ver un listado de las taquillas con su código, ubicación, estado y socio asignado, para saber cuáles están libres.
 
-Prueba de aceptación
+Prueba de aceptación:
 
 Acceder a la pantalla Taquillas. Se muestra una tabla con todas las taquillas y los botones Nueva taquilla, Editar, Eliminar, Asignar y Liberar.
 
@@ -76,7 +126,7 @@ RF5.2 Creación de taquillas
 
 Como administrador, quiero dar de alta una taquilla indicando su código y ubicación, para ampliar las taquillas disponibles del club. 
 
-Prueba de aceptación 
+Prueba de aceptación:
 
 Pulsar Nueva taquilla, rellenar código y ubicación y pulsar Guardar. La taquilla aparece en el listado con estado libre. 
 
@@ -86,7 +136,7 @@ Pulsar Cancelar. Se vuelve al listado sin crear la taquilla.
 
 RF5.3 Edición de taquillas Como administrador, quiero modificar el código o la ubicación de una taquilla, para corregir sus datos. 
 
-Prueba de aceptación 
+Prueba de aceptación:
 
 Pulsar Editar, cambiar la ubicación y pulsar Guardar cambios. El listado muestra la nueva ubicación. 
 
@@ -94,7 +144,7 @@ Vaciar el código y pulsar Guardar cambios. El sistema muestra un error de valid
 
 RF5.4 Eliminación de taquillas Como administrador, quiero eliminar una taquilla, para retirar del sistema las que ya no existen. 
 
-Prueba de aceptación 
+Prueba de aceptación:
 
 Pulsar Eliminar sobre una taquilla libre y pulsar Confirmar. La taquilla desaparece del listado. 
 
