@@ -63,21 +63,75 @@ Socio: Usuario que reserva pistas y consulta sus reservas y su taquilla.
 
 ### 4.1. Requisitos funcionales
 
-RF2.1 Listado de pistas 
+_**RF1.0 Gestión de socios y acceso**_
+
+**RF1.1 Inicio de sesión** 
+
+Como usuario (administrador o socio), quiero iniciar sesión con mi email y contraseña, para acceder a las funciones de mi rol. 
+
+_Prueba de aceptación:_
+
+Introducir credenciales válidas y pulsar Iniciar sesión. El sistema accede a la pantalla de inicio correspondiente al rol. Introducir una contraseña incorrecta y pulsar Iniciar sesión. El sistema muestra un mensaje de credenciales no válidas. 
+
+Dejar un campo vacío y pulsar Iniciar sesión. El sistema indica que el campo es obligatorio.
+
+**RF1.2 Listado de socios**
+Como administrador, quiero ver un listado de los socios con su número de socio, DNI, nombre y apellidos, email, teléfono y fecha de alta, para conocer quiénes forman parte del club. 
+
+_Prueba de aceptación:_
+
+Acceder a la pantalla Socios. Se muestra una tabla con todos los socios y los botones Nuevo socio, Editar y Eliminar.
+
+Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
+
+**RF1.3 Creación de socios**
+Como administrador, quiero dar de alta un socio indicando su DNI, nombre y apellidos, email y teléfono, para que pueda acceder al sistema y reservar pistas. 
+
+_Prueba de aceptación:_
+
+Pulsar Nuevo socio, rellenar todos los campos y pulsar Guardar. El socio aparece en el listado con número de socio y fecha de alta automáticos.
+
+Introducir un DNI ya registrado y pulsar Guardar. El sistema rechaza el alta e informa de que el DNI ya existe.
+
+Pulsar Cancelar. Se vuelve al listado sin crear el socio.
+
+**RF1.4 Edición de socios** 
+
+Como administrador, quiero modificar los datos de un socio, para mantener su información actualizada.
+
+_Prueba de aceptación:_
+
+Cambiar el teléfono y pulsar Guardar cambios. El listado muestra el nuevo teléfono. Vaciar el campo email y pulsar Guardar cambios. El sistema muestra un error y no guarda.
+
+**RF1.5 Eliminación de socios**
+
+Como administrador, quiero eliminar un socio, para dar de baja a quienes dejan de pertenecer al club. 
+
+_Prueba de aceptación:_ 
+
+Pulsar Eliminar y Confirmar sobre un socio sin reservas activas. El socio desaparece del listado. 
+
+Pulsar Eliminar sobre un socio con reservas activas. El sistema impide la eliminación e informa del motivo. 
+
+Pulsar Eliminar y después Cancelar. El socio permanece en el listado.
+
+_**RF2.0 Gestión de pistas**_
+
+**RF2.1 Listado de pistas** 
 
 Como Administrador, quiero ver un listado de las pistas con su número, superficie, si es cubierta, si tiene luz, precio por hora y estado, para conocer las instalaciones del club.
 
-Prueba de aceptación:
+_Prueba de aceptación:_
 
 Acceder a la pantalla Pistas. Se muestra una tabla con todas las pistas y los botones Nueva pista, Editar, Eliminar y Habilitar/Deshabilitar.
 
 Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
 
-RF2.2 Creación de pistas
+**RF2.2 Creación de pistas**
 
 Como Administrador, quiero dar de alta una pista indicando su número, superficie, si es cubierta, si tiene luz y su precio por hora, para ampliar las instalaciones disponibles.
 
-Prueba de aceptación:
+_Prueba de aceptación:_
 
 Pulsar Nueva pista, rellenar todos los datos y pulsar Guardar. La pista aparece en el listado con estado habilitada. 
 
@@ -87,11 +141,11 @@ Introducir un precio negativo o vacío y pulsar Guardar. El sistema muestra un e
 
 Pulsar Cancelar. Se vuelve al listado sin crear la pista.
 
-RF2.3 Edición de pistas 
+**RF2.3 Edición de pistas** 
 
 Como Administrador, quiero modificar las características de una pista (superficie, cubierta, luz, precio por hora), para mantener sus datos actualizados. 
 
-Prueba de aceptación
+_Prueba de aceptación:_
 
 Pulsar Editar, cambiar el precio por hora y pulsar Guardar cambios. El listado muestra el nuevo precio.
 
@@ -99,11 +153,11 @@ Vaciar la superficie y pulsar Guardar cambios. El sistema muestra un error de va
 
 Cambiar el precio de una pista con reservas ya confirmadas. Las reservas existentes conservan el precio con el que se hicieron.
 
-RF2.4 Eliminación de pistas 
+**RF2.4 Eliminación de pistas**
 
 Como Administrador, quiero eliminar una pista, para retirar del sistema las que ya no existen.
 
-Prueba de aceptación
+_Prueba de aceptación:_
 
 Pulsar Eliminar sobre una pista sin reservas futuras ni mantenimiento activo y pulsar Confirmar. La pista desaparece del listado. 
 
@@ -111,8 +165,107 @@ Pulsar Eliminar y después Cancelar. La pista permanece en el listado.
 
 Pulsar Eliminar sobre una pista con reservas futuras activas o un parte de mantenimiento activo. El sistema impide la eliminación e informa del motivo.
 
+_**RF3.0 Gestión de reservas**_
 
-RF5.1 Listado de taquillas 
+**RF3.1 Listado de reservas** 
+
+Como socio, quiero ver un listado de mis reservas con su código, pista, fecha, hora de inicio y fin, precio total y estado, para saber qué tengo reservado y qué he usado. 
+
+_Prueba de aceptación:_ 
+
+Acceder a Mis reservas como socio con reservas. Se muestran solo sus reservas, en las pestañas Activas y Pasadas.
+
+Acceder como socio sin reservas. Se muestra un mensaje de lista vacía.
+
+Acceder como administrador. Se muestran las reservas de todos los socios.
+
+**RF3.2 Creación de reservas**
+Como socio, quiero reservar una pista en una fecha y franja concretas, y añadir artículos extra si los necesito, para poder jugar con todo lo necesario.
+
+_Prueba de aceptación:_
+
+Reservar una pista y franja libres y pulsar Confirmar reserva. La reserva aparece en Mis reservas.
+
+Reservar una franja ya ocupada en esa pista (RN.01). El sistema bloquea la operación por conflicto de ocupación.
+
+Confirmar una tercera reserva con 2 activas (RN.02). El sistema la deniega por límite máximo.
+
+Reservar una pista con mantenimiento activo (RN.04). El sistema no lo permite.
+
+Reservar para dentro de 30 días (RN.06). El sistema lo deniega por superar el horizonte de reserva. 
+
+**RF3.3 Modificación de reservas**
+
+Como socio, quiero cambiar la fecha, la franja o los artículos de una reserva activa, para adaptarla a mis necesidades sin cancelarla.
+
+_Prueba de aceptación:_ 
+
+Cambiar a una franja libre y pulsar Guardar cambios. La reserva muestra la nueva franja. 
+
+Cambiar a una franja ocupada en esa pista (RN.01). El sistema rechaza el cambio por conflicto de ocupación. 
+
+Cambiar la cantidad de un artículo y pulsar Guardar cambios. El precio total se actualiza. Pulsar Volver. La reserva no se modifica.
+
+**RF3.4 Cancelación de reservas**
+
+Como socio, quiero cancelar una reserva activa, para liberar la pista cuando no voy a usarla.
+_Prueba de aceptación:_
+
+Cancelar una reserva de las 20:00 h a las 07:00 h del mismo día, 13 h antes (RN.03). Se cancela sin penalización.
+
+Cancelar la misma reserva a las 12:00 h, 8 h antes (RN.03). El sistema deniega la devolución por incumplimiento de antelación.
+
+Pulsar Volver en la ventana de confirmación. La reserva permanece activa.
+
+_**RF4.0 Gestión de mantenimientos**_
+
+**RF4.1 Listado de mantenimientos**
+
+Como administrador, quiero ver un listado de los mantenimientos con su pista, fecha de inicio, fecha de fin, descripción, ticket de incidencia y estado, para saber cuáles están en curso y cuáles se han realizado. 
+
+_Prueba de aceptación:_ 
+
+Acceder a la pantalla Mantenimientos. Se muestran los activos y el histórico de los finalizados, con los botones Nuevo mantenimiento, Editar y Finalizar. 
+
+Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
+
+**RF4.2 Registro de mantenimientos** 
+
+Como administrador, quiero registrar un mantenimiento indicando la pista, la fecha de inicio, la fecha de fin (opcional), la descripción y el ticket de incidencia, para que la pista no se pueda reservar mientras dura. 
+
+_Prueba de aceptación:_ 
+
+Rellenar los datos y pulsar Guardar (RN.04). El mantenimiento aparece como activo y la pista queda bloqueada esos días.
+
+Registrar un mantenimiento sobre una reserva activa (RN.04). El sistema lo rechaza e informa del conflicto.
+
+Indicar una fecha de fin anterior a la de inicio. El sistema muestra un error de validación.
+
+**RF4.3 Edición de mantenimientos**
+Como administrador, quiero modificar un mantenimiento activo, para ajustar sus fechas, su descripción o su ticket de incidencia.
+
+_Prueba de aceptación:_
+
+Ampliar la fecha de fin y pulsar Guardar cambios. El bloqueo de la pista se actualiza.
+
+Ampliar el periodo hasta una fecha con una reserva activa (RN.04). El sistema rechaza el cambio e informa del conflicto.
+
+Pulsar Cancelar. El mantenimiento no se modifica.
+
+**RF4.4 Finalización de mantenimientos**
+
+Como administrador, quiero finalizar un mantenimiento, para que la pista vuelva a estar disponible.
+
+_Prueba de aceptación:_
+
+Pulsar Finalizar y Confirmar. El mantenimiento pasa a finalizado, se conserva en el histórico y la pista vuelve a estar disponible.
+
+Pulsar Finalizar y después Cancelar. El mantenimiento sigue activo.
+
+
+_**RF5.0 Gestión de taquillas**_
+
+**RF5.1 Listado de taquillas** 
 
 Como administrador, quiero ver un listado de las taquillas con su código, ubicación, estado y socio asignado, para saber cuáles están libres.
 
@@ -122,11 +275,11 @@ Acceder a la pantalla Taquillas. Se muestra una tabla con todas las taquillas y 
 
 Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
 
-RF5.2 Creación de taquillas 
+**RF5.2 Creación de taquillas** 
 
 Como administrador, quiero dar de alta una taquilla indicando su código y ubicación, para ampliar las taquillas disponibles del club. 
 
-Prueba de aceptación:
+_Prueba de aceptación:_
 
 Pulsar Nueva taquilla, rellenar código y ubicación y pulsar Guardar. La taquilla aparece en el listado con estado libre. 
 
@@ -134,17 +287,21 @@ Introducir un código ya existente y pulsar Guardar. El sistema rechaza el alta 
 
 Pulsar Cancelar. Se vuelve al listado sin crear la taquilla.
 
-RF5.3 Edición de taquillas Como administrador, quiero modificar el código o la ubicación de una taquilla, para corregir sus datos. 
+**RF5.3 Edición de taquillas** 
 
-Prueba de aceptación:
+Como administrador, quiero modificar el código o la ubicación de una taquilla, para corregir sus datos. 
+
+_Prueba de aceptación:_
 
 Pulsar Editar, cambiar la ubicación y pulsar Guardar cambios. El listado muestra la nueva ubicación. 
 
 Vaciar el código y pulsar Guardar cambios. El sistema muestra un error de validación y no guarda.
 
-RF5.4 Eliminación de taquillas Como administrador, quiero eliminar una taquilla, para retirar del sistema las que ya no existen. 
+**RF5.4 Eliminación de taquillas**
 
-Prueba de aceptación:
+Como administrador, quiero eliminar una taquilla, para retirar del sistema las que ya no existen. 
+
+_Prueba de aceptación:_
 
 Pulsar Eliminar sobre una taquilla libre y pulsar Confirmar. La taquilla desaparece del listado. 
 
