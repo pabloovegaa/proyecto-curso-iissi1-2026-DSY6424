@@ -48,22 +48,7 @@ Socio: Usuario registrado que consulta pistas disponibles, revisa sus reservas y
 
 ### 4.1. Requisitos funcionales
 
-R.F.01. Listar Pistas Disponibles 
-Como Socio **quiero** obtener un listado de pistas disponibles filtrado por fecha, hora y tipo de superficie **para** encontrar una pista libre según mis preferencias.
 
-
-R.F.02. Consultar Reservas de un Socio 
-Como Socio **quiero**  visualizar mis reservas filtradas por estado (próximas, completadas o canceladas)  **para** revisar mis horarios confirmados. 
-
-
-
-R.F.03. Consultar Parrilla Diaria de Ocupación 
-Como Administrador **quiero** visualizar la parrilla completa de ocupación del club para una fecha determinada **para** supervisar el uso general del centro.
-
-
-
-R.F.04. Listar Partes de Mantenimiento Activos 
-Como Administrador  **quiero** consultar un listado de las pistas en mantenimiento con su descripción y fecha prevista de finalización **para** planificar las reparaciones del centro.
 
 
 #### 4.1.1. Requisitos de información
