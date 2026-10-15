@@ -130,6 +130,10 @@ Un socio debe tener al menos 16 años para efectuar una reserva de pista.
 Prueba 1: Intentar registrar una reserva con la cuenta de un socio cuya fecha de nacimiento indique que tiene 15 años. El sistema debe denegar la operación e informar que no cumple el requisito de edad mínima.
 Prueba 2:Intentar registrar una reserva con la cuenta de un socio que tenga 16 años o más. El sistema debe permitir la reserva con normalidad.
 
+R.N.07. Antelación de máxima Reserva
+Un socio solo puede reservar con un máximo de 14 días de antelación. Así se evita bloquear el calendario con reservas muy lejanas.
+Prueba 1: Intentar reservar una pista para dentro de 30 días. El sistema debe denegarla indicando que supera el horizonte de reserva.
+Prueba 2: Reservar para dentro de 7 días. La reserva debe confirmarse.
 ### 4.2. Mapa de historias de usuario (opcional)
 
 ### 4.3. Requisitos no funcionales (opcional)
