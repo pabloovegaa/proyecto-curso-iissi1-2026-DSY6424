@@ -76,6 +76,7 @@ Introducir credenciales válidas y pulsar Iniciar sesión. El sistema accede a l
 Dejar un campo vacío y pulsar Iniciar sesión. El sistema indica que el campo es obligatorio.
 
 **RF1.2 Listado de socios**
+
 Como administrador, quiero ver un listado de los socios con su número de socio, DNI, nombre y apellidos, email, teléfono y fecha de alta, para conocer quiénes forman parte del club. 
 
 _Prueba de aceptación:_
@@ -85,6 +86,7 @@ Acceder a la pantalla Socios. Se muestra una tabla con todos los socios y los bo
 Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
 
 **RF1.3 Creación de socios**
+
 Como administrador, quiero dar de alta un socio indicando su DNI, nombre y apellidos, email y teléfono, para que pueda acceder al sistema y reservar pistas. 
 
 _Prueba de aceptación:_
@@ -180,6 +182,7 @@ Acceder como socio sin reservas. Se muestra un mensaje de lista vacía.
 Acceder como administrador. Se muestran las reservas de todos los socios.
 
 **RF3.2 Creación de reservas**
+
 Como socio, quiero reservar una pista en una fecha y franja concretas, y añadir artículos extra si los necesito, para poder jugar con todo lo necesario.
 
 _Prueba de aceptación:_
@@ -209,6 +212,7 @@ Cambiar la cantidad de un artículo y pulsar Guardar cambios. El precio total se
 **RF3.4 Cancelación de reservas**
 
 Como socio, quiero cancelar una reserva activa, para liberar la pista cuando no voy a usarla.
+
 _Prueba de aceptación:_
 
 Cancelar una reserva de las 20:00 h a las 07:00 h del mismo día, 13 h antes (RN.03). Se cancela sin penalización.
@@ -242,6 +246,7 @@ Registrar un mantenimiento sobre una reserva activa (RN.04). El sistema lo recha
 Indicar una fecha de fin anterior a la de inicio. El sistema muestra un error de validación.
 
 **RF4.3 Edición de mantenimientos**
+
 Como administrador, quiero modificar un mantenimiento activo, para ajustar sus fechas, su descripción o su ticket de incidencia.
 
 _Prueba de aceptación:_
