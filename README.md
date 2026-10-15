@@ -95,7 +95,6 @@ Prueba 1:Solicitar disponibilidad de la Pista 3 durante una fecha y hora en la q
 Prueba 2: Registrar un mantenimiento para la Pista 3 el 20/10/2026 de 10:00 h a 12:00 h. Consultar la disponibilidad de esa pista a las 13:00 h del mismo día. La Pista 3 debe aparecer en el listado de pistas disponibles.
 
 
-
 R.N.05. Exclusividad de Asignación de Taquilla 
 Una taquilla solo puede estar alquilada por un único socio de forma activa a la vez.
 
@@ -109,6 +108,8 @@ Un socio solo puede reservar con un máximo de 14 días de antelación. Así se 
 Prueba 1: Intentar reservar una pista para dentro de 30 días. El sistema debe denegarla indicando que supera el horizonte de reserva.
 
 Prueba 2: Reservar para dentro de 7 días. La reserva debe confirmarse.
+
+
 ### 4.2. Mapa de historias de usuario (opcional)
 
 ### 4.3. Requisitos no funcionales (opcional)
