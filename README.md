@@ -118,6 +118,22 @@ Como [tipo de usuario]
 quiero [servicio]
 para [razón]
 
+R.N.F.01. Rendimiento: Como Socio quiero que el listado de pistas disponibles se muestre en menos de 3 segundos para poder reservar con rapidez. 
+
+R.N.F.02. Usabilidad: Como Socio quiero poder completar una reserva en un máximo de 4 pasos para no necesitar formación previa.  
+
+R.N.F.03. Disponibilidad: Como Administrador quiero que el sistema esté disponible el 99 % del tiempo para que los socios puedan reservar a cualquier hora.  
+
+R.N.F.04. Seguridad: Como Socio quiero que el acceso requiera autenticación y que mis datos personales solo sean visibles para mí y para el administrador para proteger mi privacidad. 
+
+R.N.F.05. Protección: de datos Como Administrador quiero que el sistema cumpla el RGPD en el tratamiento de los datos personales (DNI, email, teléfono) para evitar incumplimientos legales.  
+
+R.N.F.06. Concurrencia: Como Socio quiero que el sistema soporte varios usuarios reservando a la vez sin generar reservas duplicadas para que la integridad de las reservas se mantenga.  
+
+R.N.F.07. Compatibilidad: Como Socio quiero acceder desde los navegadores actuales (Chrome, Firefox, Edge, Safari) y desde móvil para reservar desde cualquier dispositivo.
+
+R.N.F.08. Persistencia: / Copias de seguridad Como Administrador quiero que se realice una copia de seguridad diaria de los datos para no perder el histórico de reservas y mantenimientos
+
 -- fin entregable 1 --
 
 ## 5. Modelo conceptual
