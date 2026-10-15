@@ -101,6 +101,7 @@ Una taquilla solo puede estar alquilada por un único socio de forma activa a la
 
 Prueba 1:Asignar la Taquilla T-12 al Socio A. Intentar asignar la misma Taquilla T-12 al Socio B de forma simultánea. El sistema debe denegar la segunda asignación. 
 
+Prueba 2:Asignar la Taquilla T-12 al Socio A y después liberarla (finalizar su alquiler). Asignar la Taquilla T-12 al Socio B. El sistema debe permitir la asignación.
 
 R.N.06. Antelación de máxima Reserva
 Un socio solo puede reservar con un máximo de 14 días de antelación. Así se evita bloquear el calendario con reservas muy lejanas.
