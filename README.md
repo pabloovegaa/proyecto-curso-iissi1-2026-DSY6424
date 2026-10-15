@@ -58,8 +58,6 @@ Socio: Usuario que reserva pistas y consulta sus reservas y su taquilla.
 ### 4.1. Requisitos funcionales
 
 
-
-
 #### 4.1.1. Requisitos de información
 R.I.01. Información de Usuarios 
 Como Socio / Administrador **quiero** consultar los datos personales del usuario (DNI, nombre, email, teléfono y fecha de alta) **para** gestionar la identificación dentro del club.
