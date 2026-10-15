@@ -104,9 +104,11 @@ Una taquilla solo puede estar alquilada por un único socio de forma activa a la
 Prueba 1:Asignar la Taquilla T-12 al Socio A. Intentar asignar la misma Taquilla T-12 al Socio B de forma simultánea. El sistema debe denegar la segunda asignación. 
 
 
-R.N.07. Antelación de máxima Reserva
+R.N.06. Antelación de máxima Reserva
 Un socio solo puede reservar con un máximo de 14 días de antelación. Así se evita bloquear el calendario con reservas muy lejanas.
+
 Prueba 1: Intentar reservar una pista para dentro de 30 días. El sistema debe denegarla indicando que supera el horizonte de reserva.
+
 Prueba 2: Reservar para dentro de 7 días. La reserva debe confirmarse.
 ### 4.2. Mapa de historias de usuario (opcional)
 
