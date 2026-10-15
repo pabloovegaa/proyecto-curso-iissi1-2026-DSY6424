@@ -132,7 +132,7 @@ R.N.F.06. Concurrencia: Como Socio quiero que el sistema soporte varios usuarios
 
 R.N.F.07. Compatibilidad: Como Socio quiero acceder desde los navegadores actuales (Chrome, Firefox, Edge, Safari) y desde móvil para reservar desde cualquier dispositivo.
 
-R.N.F.08. Persistencia/Copias: de seguridad Como Administrador quiero que se realice una copia de seguridad diaria de los datos para no perder el histórico de reservas y mantenimientos
+R.N.F.08. Persistencia/Copias de seguridad: Como Administrador quiero que se realice una copia de seguridad diaria de los datos para no perder el histórico de reservas y mantenimientos
 
 -- fin entregable 1 --
 
