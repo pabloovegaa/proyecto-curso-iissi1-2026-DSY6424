@@ -31,11 +31,20 @@ Desarrollar una aplicación web de gestión de reservas que permita a los client
 ## 3. Visión general del sistema
 ### 3.1. Requisitos generales
 
-1. El sistema debe ser accesible vía web para socios y administradores. 
+RG.01 Sistema de socios y acceso. 
+Como administrador quiero gestionar los socios del club y como socio quiero acceder al sistema de forma autenticada. 
 
-2. Se debe garantizar la integridad de las reservas impidiendo solapamientos de fechas y horas en la misma pista. 
+RG.02 Sistema de pistas. 
+Como administrador quiero gestionar las pistas del club y consultar su ocupación; como socio quiero consultar las pistas disponibles. 
 
-3. El sistema mantendrá un registro histórico de las reservas e incidencias de mantenimiento finalizadas.
+RG.03 Sistema de reservas. 
+Como socio quiero gestionar mis reservas de pistas. 
+
+RG.04 Sistema de mantenimientos. 
+Como administrador quiero gestionar los mantenimientos de las pistas. 
+
+RG.05 Sistema de taquillas. 
+Como administrador quiero gestionar las taquillas del club y su asignación a los socios.
 
 ### 3.2. Usuarios del sistema
 
