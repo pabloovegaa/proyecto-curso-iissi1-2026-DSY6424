@@ -82,25 +82,33 @@ Como Administrador **quiero** consultar la parrilla diaria de ocupación de toda
 #### 4.1.2. Reglas de negocio
 R.N.01. Exclusividad de Reserva por Pista 
 Una pista sólo puede tener una única reserva activa en la misma fecha y franja horaria. 
+
 Prueba 1: Intentar registrar una reserva para la Pista 1 el 20/10/2026 a las 10:00 h habiendo ya una reserva confirmada en ese tramo. El sistema debe bloquear la operación e informar de un conflicto de ocupación. 
+
 Prueba 2: Solicitar reserva para la Pista 1 en un tramo posterior (11:30 h) del mismo día. Comprobar que el sistema confirma la reserva correctamente.
 
 R.N.02. Límite de Reservas Activas por Socio 
 Un socio no puede tener más de 2 reservas activas simultáneas en el sistema para evitar el acaparamiento de pistas. 
+
 Prueba 1:Seleccionar un socio que posea 2 reservas activas para días futuros e intentar asignarle una 3ª reserva. El sistema debe denegar la acción indicando que ha alcanzado el límite máximo. 
+
 Prueba 2: Proceder a cancelar una de las dos reservas del socio e intentar de nuevo registrar la reserva. Comprobar que la operación resulta exitosa.
 
 R.N.03. Antelación Mínima para Cancelación
 Una reserva solo puede ser cancelada sin coste económico si se solicita con un mínimo de 12 horas de antelación respecto al inicio del horario reservado.
-Prueba 1:Cancelar una reserva programada para las 20:00 h solicitándolo a las 07:00 h del mismo día (13 h de antelación). Comprobar que se procesa sin penalización. 
+
+Prueba 1:Cancelar una reserva programada para las 20:00 h solicitándolo a las 07:00 h del mismo día (13 h de antelación). Comprobar que se procesa sin penalización.
+
 Prueba 2:Intentar cancelar la misma reserva a las 12:00 h (8 h de antelación). Comprobar que el sistema deniega la devolución por incumplimiento de antelación.
 
 R.N.04. Incompatibilidad por Mantenimiento 
 Una pista marcada con un registro de mantenimiento activo en un horario determinado no puede ser reservada por ningún socio.  
+
 Prueba 1:Solicitar disponibilidad de la Pista 3 durante una fecha y hora en la que tiene registrado un parte de mantenimiento. La Pista 3 no debe aparecer en el listado de pistas disponibles. 
 
 R.N.05. Exclusividad de Asignación de Taquilla 
 Una taquilla solo puede estar alquilada por un único socio de forma activa a la vez.
+
 Prueba 1:Asignar la Taquilla T-12 al Socio A. Intentar asignar la misma Taquilla T-12 al Socio B de forma simultánea. El sistema debe denegar la segunda asignación. 
 
 
