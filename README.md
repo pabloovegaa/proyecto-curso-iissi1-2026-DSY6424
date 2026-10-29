@@ -33,24 +33,24 @@ Desarrollar una aplicación web de gestión de reservas que permita a los client
 
 RG.01. Control de acceso por roles.
 
-Como usuario del sistema (Socio o Administrador) quiero autenticarme para acceder solo a las funciones propias de mi rol para proteger la información y garantizar un uso adecuado del sistema.
+Como usuario del sistema (Socio o Administrador) **quiero** autenticarme para acceder solo a las funciones propias de mi rol para proteger la información y garantizar un uso adecuado del sistema.
 
 
 RG.02 Sistema de pistas. 
 
-Como administrador quiero gestionar las pistas del club y consultar su ocupación; como socio quiero consultar las pistas disponibles. 
+Como administrador **quiero** gestionar las pistas del club y consultar su ocupación; como socio **quiero** consultar las pistas disponibles. 
 
 RG.03 Sistema de reservas. 
 
-Como socio quiero gestionar mis reservas de pistas. 
+Como socio **quiero** gestionar mis reservas de pistas. 
 
 RG.04 Sistema de mantenimientos. 
 
-Como administrador quiero gestionar los mantenimientos de las pistas. 
+Como administrador **quiero** gestionar los mantenimientos de las pistas. 
 
 RG.05 Sistema de taquillas. 
 
-Como administrador quiero gestionar las taquillas del club y su asignación a los socios.
+Como administrador **quiero** gestionar las taquillas del club y su asignación a los socios.
 
 ### 3.2. Usuarios del sistema
 
@@ -67,7 +67,7 @@ _**RF1.0 Gestión de socios y acceso**_
 
 <ins>**RF1.1 Inicio de sesión**<ins>
 
-Como usuario (administrador o socio), quiero iniciar sesión con mi email y contraseña, para acceder a las funciones de mi rol. 
+Como usuario (administrador o socio), **quiero** iniciar sesión con mi email y contraseña, **para** acceder a las funciones de mi rol. 
 
 _Prueba de aceptación:_
 
@@ -77,7 +77,7 @@ Dejar un campo vacío y pulsar Iniciar sesión. El sistema indica que el campo e
 
 <ins>**RF1.2 Listado de socios**<ins>
 
-Como administrador, quiero ver un listado de los socios con su número de socio, DNI, nombre y apellidos, email, teléfono y fecha de alta, para conocer quiénes forman parte del club. 
+Como administrador, **quiero** ver un listado de los socios con su número de socio, DNI, nombre y apellidos, email, teléfono y fecha de alta, **para** conocer quiénes forman parte del club. 
 
 _Prueba de aceptación:_
 
@@ -87,7 +87,7 @@ Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
 
 <ins>**RF1.3 Creación de socios**<ins>
 
-Como administrador, quiero dar de alta un socio indicando su DNI, nombre y apellidos, email y teléfono, para que pueda acceder al sistema y reservar pistas. 
+Como administrador, **quiero** dar de alta un socio indicando su DNI, nombre y apellidos, email y teléfono, **para** que pueda acceder al sistema y reservar pistas. 
 
 _Prueba de aceptación:_
 
@@ -99,7 +99,7 @@ Pulsar Cancelar. Se vuelve al listado sin crear el socio.
 
 <ins>**RF1.4 Edición de socios**<ins>
 
-Como administrador, quiero modificar los datos de un socio, para mantener su información actualizada.
+Como administrador, **quiero** modificar los datos de un socio, **para** mantener su información actualizada.
 
 _Prueba de aceptación:_
 
@@ -107,7 +107,7 @@ Cambiar el teléfono y pulsar Guardar cambios. El listado muestra el nuevo telé
 
 <ins>**RF1.5 Eliminación de socios**<ins>
 
-Como administrador, quiero eliminar un socio, para dar de baja a quienes dejan de pertenecer al club. 
+Como administrador, **quiero** eliminar un socio, **para** dar de baja a quienes dejan de pertenecer al club. 
 
 _Prueba de aceptación:_ 
 
@@ -121,7 +121,7 @@ _**RF2.0 Gestión de pistas**_
 
 <ins>**RF2.1 Listado de pistas**<ins> 
 
-Como Administrador, quiero ver un listado de las pistas con su número, superficie, si es cubierta, si tiene luz, precio por hora y estado, para conocer las instalaciones del club.
+Como Administrador, **quiero** ver un listado de las pistas con su número, superficie, si es cubierta, si tiene luz, precio por hora y estado, **para** conocer las instalaciones del club.
 
 _Prueba de aceptación:_
 
@@ -131,7 +131,7 @@ Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
 
 <ins>**RF2.2 Creación de pistas**<ins>
 
-Como Administrador, quiero dar de alta una pista indicando su número, superficie, si es cubierta, si tiene luz y su precio por hora, para ampliar las instalaciones disponibles.
+Como Administrador, **quiero** dar de alta una pista indicando su número, superficie, si es cubierta, si tiene luz y su precio por hora, **para** ampliar las instalaciones disponibles.
 
 _Prueba de aceptación:_
 
@@ -145,7 +145,7 @@ Pulsar Cancelar. Se vuelve al listado sin crear la pista.
 
 <ins>**RF2.3 Edición de pistas**<ins> 
 
-Como Administrador, quiero modificar las características de una pista (superficie, cubierta, luz, precio por hora), para mantener sus datos actualizados. 
+Como Administrador, **quiero** modificar las características de una pista (superficie, cubierta, luz, precio por hora), **para** mantener sus datos actualizados. 
 
 _Prueba de aceptación:_
 
@@ -157,7 +157,7 @@ Cambiar el precio de una pista con reservas ya confirmadas. Las reservas existen
 
 <ins>**RF2.4 Eliminación de pistas**<ins>
 
-Como Administrador, quiero eliminar una pista, para retirar del sistema las que ya no existen.
+Como Administrador, **quiero** eliminar una pista, **para** retirar del sistema las que ya no existen.
 
 _Prueba de aceptación:_
 
@@ -171,7 +171,7 @@ _**RF3.0 Gestión de reservas**_
 
 <ins>**RF3.1 Listado de reservas**<ins> 
 
-Como socio, quiero ver un listado de mis reservas con su código, pista, fecha, hora de inicio y fin, precio total y estado, para saber qué tengo reservado y qué he usado. 
+Como socio, **quiero** ver un listado de mis reservas con su código, pista, fecha, hora de inicio y fin, precio total y estado, **para** saber qué tengo reservado y qué he usado. 
 
 _Prueba de aceptación:_ 
 
@@ -183,7 +183,7 @@ Acceder como administrador. Se muestran las reservas de todos los socios.
 
 <ins>**RF3.2 Creación de reservas**<ins>
 
-Como socio, quiero reservar una pista en una fecha y franja concretas, y añadir artículos extra si los necesito, para poder jugar con todo lo necesario.
+Como socio, **quiero** reservar una pista en una fecha y franja concretas, y añadir artículos extra si los necesito, **para** poder jugar con todo lo necesario.
 
 _Prueba de aceptación:_
 
@@ -199,7 +199,7 @@ Reservar para dentro de 30 días (RN.06). El sistema lo deniega por superar el h
 
 <ins>**RF3.3 Modificación de reservas**<ins>
 
-Como socio, quiero cambiar la fecha, la franja o los artículos de una reserva activa, para adaptarla a mis necesidades sin cancelarla.
+Como socio, **quiero** cambiar la fecha, la franja o los artículos de una reserva activa, **para** adaptarla a mis necesidades sin cancelarla.
 
 _Prueba de aceptación:_ 
 
@@ -211,7 +211,7 @@ Cambiar la cantidad de un artículo y pulsar Guardar cambios. El precio total se
 
 <ins>**RF3.4 Cancelación de reservas**<ins>
 
-Como socio, quiero cancelar una reserva activa, para liberar la pista cuando no voy a usarla.
+Como socio, **quiero** cancelar una reserva activa, **para** liberar la pista cuando no voy a usarla.
 
 _Prueba de aceptación:_
 
@@ -225,7 +225,7 @@ _**RF4.0 Gestión de mantenimientos**_
 
 <ins>**RF4.1 Listado de mantenimientos**<ins>
 
-Como administrador, quiero ver un listado de los mantenimientos con su pista, fecha de inicio, fecha de fin, descripción, ticket de incidencia y estado, para saber cuáles están en curso y cuáles se han realizado. 
+Como administrador, **quiero** ver un listado de los mantenimientos con su pista, fecha de inicio, fecha de fin, descripción, ticket de incidencia y estado, **para** saber cuáles están en curso y cuáles se han realizado. 
 
 _Prueba de aceptación:_ 
 
@@ -235,7 +235,7 @@ Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
 
 <ins>**RF4.2 Registro de mantenimientos**<ins> 
 
-Como administrador, quiero registrar un mantenimiento indicando la pista, la fecha de inicio, la fecha de fin (opcional), la descripción y el ticket de incidencia, para que la pista no se pueda reservar mientras dura. 
+Como administrador, **quiero** registrar un mantenimiento indicando la pista, la fecha de inicio, la fecha de fin (opcional), la descripción y el ticket de incidencia, **para** que la pista no se pueda reservar mientras dura. 
 
 _Prueba de aceptación:_ 
 
@@ -247,7 +247,7 @@ Indicar una fecha de fin anterior a la de inicio. El sistema muestra un error de
 
 <ins>**RF4.3 Edición de mantenimientos**<ins>
 
-Como administrador, quiero modificar un mantenimiento activo, para ajustar sus fechas, su descripción o su ticket de incidencia.
+Como administrador, **quiero** modificar un mantenimiento activo, **para** ajustar sus fechas, su descripción o su ticket de incidencia.
 
 _Prueba de aceptación:_
 
@@ -259,7 +259,7 @@ Pulsar Cancelar. El mantenimiento no se modifica.
 
 <ins>**RF4.4 Finalización de mantenimientos**<ins>
 
-Como administrador, quiero finalizar un mantenimiento, para que la pista vuelva a estar disponible.
+Como administrador, **quiero** finalizar un mantenimiento, **para** que la pista vuelva a estar disponible.
 
 _Prueba de aceptación:_
 
@@ -272,7 +272,7 @@ _**RF5.0 Gestión de taquillas**_
 
 <ins>**RF5.1 Listado de taquillas**<ins> 
 
-Como administrador, quiero ver un listado de las taquillas con su código, ubicación, estado y socio asignado, para saber cuáles están libres.
+Como administrador, **quiero** ver un listado de las taquillas con su código, ubicación, estado y socio asignado, **para** saber cuáles están libres.
 
 Prueba de aceptación:
 
@@ -282,7 +282,7 @@ Acceder con una sesión de socio. El sistema deniega el acceso a la pantalla.
 
 <ins>**RF5.2 Creación de taquillas**<ins>
 
-Como administrador, quiero dar de alta una taquilla indicando su código y ubicación, para ampliar las taquillas disponibles del club. 
+Como administrador, **quiero** dar de alta una taquilla indicando su código y ubicación, **para** ampliar las taquillas disponibles del club. 
 
 _Prueba de aceptación:_
 
@@ -294,7 +294,7 @@ Pulsar Cancelar. Se vuelve al listado sin crear la taquilla.
 
 <ins>**RF5.3 Edición de taquillas**<ins> 
 
-Como administrador, quiero modificar el código o la ubicación de una taquilla, para corregir sus datos. 
+Como administrador, **quiero** modificar el código o la ubicación de una taquilla, **para** corregir sus datos. 
 
 _Prueba de aceptación:_
 
@@ -382,21 +382,21 @@ Como [tipo de usuario]
 quiero [servicio]
 para [razón]
 
-R.N.F.01. Rendimiento: Como Socio quiero que el listado de pistas disponibles se muestre en menos de 3 segundos para poder reservar con rapidez. 
+R.N.F.01. Rendimiento: Como Socio **quiero** que el listado de pistas disponibles se muestre en menos de 3 segundos **para** poder reservar con rapidez. 
 
-R.N.F.02. Usabilidad: Como Socio quiero poder completar una reserva en un máximo de 4 pasos para reservar de forma rápida y  sin formación previa.  
+R.N.F.02. Usabilidad: Como Socio **quiero** poder completar una reserva en un máximo de 4 pasos **para** reservar de forma rápida y  sin formación previa.  
 
-R.N.F.03. Disponibilidad: Como Administrador quiero que el sistema esté disponible el 99 % del tiempo cada mes para que los socios puedan reservar a cualquier hora.  
+R.N.F.03. Disponibilidad: Como Administrador **quiero** que el sistema esté disponible el 99 % del tiempo cada mes **para** que los socios puedan reservar a cualquier hora.  
 
-R.N.F.04. Seguridad: Como Socio quiero que el acceso requiera autenticación para que solo los usuarios registrados puedan operar con él.
+R.N.F.04. Seguridad: Como Socio **quiero** que el acceso requiera autenticación **para** que solo los usuarios registrados puedan operar con él.
 
-R.N.F.05. Protección de datos: Como Socio quiero que mis datos personales (DNI, email, teléfono) solo sean visibles para mí y para el administrador y se traten conforme al RGPD para proteger mi privacidad.
+R.N.F.05. Protección de datos: Como Socio **quiero** que mis datos personales (DNI, email, teléfono) solo sean visibles para mí y **para** el administrador y se traten conforme al RGPD para proteger mi privacidad.
 
-R.N.F.06. Fiabilidad: Como Socio quiero que el sistema soporte varios usuarios reservando a la vez sin generar reservas duplicadas para que la integridad de las reservas se mantenga.  
+R.N.F.06. Fiabilidad: Como Socio **quiero** que el sistema soporte varios usuarios reservando a la vez sin generar reservas duplicadas **para** que la integridad de las reservas se mantenga.  
 
-R.N.F.07. Portabilidad: Como Socio quiero acceder desde los navegadores actuales (Chrome, Firefox, Edge, Safari) y desde móvil para reservar desde cualquier dispositivo.
+R.N.F.07. Portabilidad: Como Socio **quiero** acceder desde los navegadores actuales (Chrome, Firefox, Edge, Safari) y desde móvil **para** reservar desde cualquier dispositivo.
 
-R.N.F.08. Persistencia/Copias de seguridad: Como Administrador quiero que se realice una copia de seguridad diaria de los datos para no perder el histórico de reservas y mantenimientos
+R.N.F.08. Persistencia/Copias de seguridad: Como Administrador **quiero** que se realice una copia de seguridad diaria de los datos **para** no perder el histórico de reservas y mantenimientos
 
 -- fin entregable 1 --
 
