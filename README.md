@@ -33,7 +33,7 @@ Desarrollar una aplicación web de gestión de reservas que permita a los client
 
 RG.01. Control de acceso por roles.
 
-Como usuario del sistema (Socio o Administrador) **quiero** autenticarme para acceder solo a las funciones propias de mi rol para proteger la información y garantizar un uso adecuado del sistema.
+Como usuario del sistema (Socio o Administrador) **quiero** autenticarme **para** acceder solo a las funciones propias de mi rol para proteger la información y garantizar un uso adecuado del sistema.
 
 
 RG.02 Sistema de pistas. 
