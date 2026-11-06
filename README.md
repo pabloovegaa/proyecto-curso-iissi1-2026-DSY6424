@@ -404,7 +404,8 @@ R.N.F.08. Persistencia/Copias de seguridad: Como Administrador **quiero** que se
 
 ### 5.1. Diagramas de clases UML
 
-<img width="654" height="864" alt="image" src="https://github.com/user-attachments/assets/38c0cd3c-412d-47df-b690-9004714993ff" />
+<img width="558" height="714" alt="image" src="https://github.com/user-attachments/assets/70cf733a-754a-49f9-87d2-90122e194fcb" />
+
 
 
 ### 5.2. Escenarios de prueba
