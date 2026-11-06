@@ -404,25 +404,38 @@ R.N.F.08. Persistencia/Copias de seguridad: Como Administrador **quiero** que se
 
 ### 5.1. Diagramas de clases UML
 
-- con restricciones.
+<img width="654" height="864" alt="image" src="https://github.com/user-attachments/assets/38c0cd3c-412d-47df-b690-9004714993ff" />
+
 
 ### 5.2. Escenarios de prueba
 
-- con descripción textual y diagrama de objetos UML.
+**Escenario 1**:
+<img width="344" height="393" alt="image" src="https://github.com/user-attachments/assets/868b9f94-033d-4420-bc3b-d54db2ed3e35" />
+
+**Escenario 2**:
+<img width="509" height="131" alt="image" src="https://github.com/user-attachments/assets/4716e1d7-6406-4cc2-b970-80d4b99a24d2" />
+
+
+
 
 ## 6. Matrices de trazabilidad
 
 - Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
 
-|       | EntidadX   | AsociaciónX  | RestricciónX  | Entidad2 ...   | 
-|:------|:-----------|:-----------|:-----------|:-----------|
-| RI-1  | X          | X          | X          | X          |
-| RI-2  |            | X          |            | X          |
-| RF-1  |            | X          |            | X          |
-| RF-2  | X          |            | X          | X          |
-| RN-1  |            | X          |            |            |
-| RN-2  | X          | X          | X          |            |
-| ...   |            |            |            |            |
+### 6. Matriz de trazabilidad
+
+| Requisitos / Elementos del Modelo | Usuario | Socio | Administrador | Pista | Reserva | Articulo | Mantenimiento | ReservaPista | ReservaArticulo | realiza | incluye | contiene | requiere | {completa, disjunta} | {RN.01} | {RN.02} | {RN.03} | {RN.04} | {RN.Deuda >500€} |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **R.I.01 (Info Usuarios)** | X | X | X | | | | | | | | | | | X | | | | | |
+| **R.I.02 (Info Pistas)** | | | | X | | | | | | | | | | | | | | | |
+| **R.I.03 (Historial Socio)** | | X | | | X | X | | X | X | X | X | X | | | | | | | |
+| **R.I.04 (Parrilla Diaria)** | | | X | X | X | | X | X | | | X | | X | | | | | | |
+| **R.N.01 (Exclusividad Pista)** | | | | X | X | | | X | | | X | | | | X | | | | |
+| **R.N.02 (Límite 2 Reservas)** | | X | | | X | | | | | X | | | | | | X | | | |
+| **R.N.03 (Antelación 12h)** | | | | | X | | | | | | | | | | | | X | | |
+| **R.N.04 (Bloqueo Manten.)** | | | | X | X | | X | X | | | X | | X | | | | | X | |
+| **R.N.Deuda (Límite Deuda >500€)** | | X | | | X | | | | | X | | | | | | | | | X |
+
 
 -- fin entregable 2 --
 
